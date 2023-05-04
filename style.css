@@ -1,0 +1,129 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+/* body style */
+body {
+  color: rgb(61, 62, 63);
+  background-color: rgb(240, 227, 217);
+}
+
+/* container style */
+.container {
+  width: 615px;
+  height: 460px;
+  margin: auto;
+  margin-top: 110px;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+/* product image style */
+.product-image {
+  width: 315px;
+  height: 460px;
+  float: left;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* product description style */
+.product-description {
+  width: 250px;
+  padding: 0 25px;
+  float: right;
+}
+
+.product-description h1 {
+  font-size: 34px;
+  font-family: 'DM Serif Display', serif;
+}
+
+.product-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 23px;
+}
+
+.caption {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.product-price {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'DM Serif Display', serif;
+  color: rgb(67, 131, 106);
+}
+
+.product-price span {
+  height: 100%;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: line-through;
+  margin-top: 12px;
+  margin-right: 75px;
+  float: right;
+  color: rgba(41, 41, 41, 0.7);
+}
+
+/* button call to action style */
+.product-description button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 17px 0;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgb(67, 131, 106);
+}
+
+/* clear float */
+.clear {
+  clear: both;
+}
+
+/* responsive breakpoint */
+@media screen and (max-width: 600px) {
+  /* container style */
+  .container {
+    width: 90%;
+    height: 100%;
+    margin: 30px auto;
+  }
+
+  /* product image style */
+  .product-image {
+    width: 100%;
+    height: max-content;
+    float: none;
+  }
+
+  /* product description style */
+  .product-description {
+    width: 80%;
+    margin: auto;
+    float: none;
+  }
+
+  .product-price span {
+    margin-right: 50px;
+    float: right;
+  }
+
+  /* button call to action style */
+  .product-description button {
+    margin-bottom: 35px;
+  }
+}
